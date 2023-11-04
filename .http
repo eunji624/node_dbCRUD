@@ -1,0 +1,68 @@
+#상품등록
+
+Post http://localhost:3001/api/products
+content-type: application/json
+
+{
+    "productName" : "오렌지",
+    "content" : "오렌지캬라멜",
+    "idName" : "렌지렌지",
+    "pwd" : 9765
+}
+
+
+
+
+
+
+####
+
+
+
+
+
+#데이터베이스 현재상태보여주기
+
+Get http://localhost:3001/api/products
+
+
+
+
+
+###
+
+#상품 상세
+Get http://localhost:3001/api/products/654660d3795a29d601bb0ffa
+
+
+
+
+
+###
+
+#상품 삭제
+DELETE http://localhost:3001/api/products/654660d3795a29d601bb0ffa
+content-type: application/json
+
+{
+    "pwd" : 3434
+}
+
+
+###
+
+#상품 수정
+PUT http://localhost:3001/api/products/6546146a7f71b2698ca906bf
+content-type: application/json
+
+{
+  "productName" : "정수기 사과",
+  "content" : "",
+  "pwd" : 9765,
+  "sale" : "SOLD_OUT"
+}
+
+
+
+
+
